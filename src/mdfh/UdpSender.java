@@ -13,7 +13,6 @@ public class UdpSender {
     public void udpsen() throws IOException {
       TextFileReader tfr = new TextFileReader("sample.txt");  
       
-      
       DatagramChannel client = null;
       client = DatagramChannel.open();
 

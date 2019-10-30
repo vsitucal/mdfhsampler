@@ -38,7 +38,7 @@ public class UdpReceiver {
       System.out.println("Client at " + remoteAdd + " sent:");
       System.out.println(msg);
       server.send(buffer,remoteAdd);
-      remoteAdd = server.receive(buffer);
+      //remoteAdd = server.receive(buffer);
       server.close();
    }
 }

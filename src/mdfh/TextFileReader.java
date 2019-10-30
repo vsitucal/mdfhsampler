@@ -40,7 +40,7 @@ public class TextFileReader {
             int bytesRead = inChannel.read((ByteBuffer) buf);
             while(bytesRead != -1){
                 
-                System.out.println("Read "+bytesRead);
+                //System.out.println("Read "+bytesRead);
                 buf.flip();
                 
                 while(buf.hasRemaining()){
@@ -53,7 +53,7 @@ public class TextFileReader {
                 
             }
             
-            System.out.println("");
+            //System.out.println("");
             aFile.close();
             
         }catch(FileNotFoundException e){

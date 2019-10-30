@@ -17,7 +17,7 @@ import java.nio.ByteBuffer;
 import java.nio.channels.DatagramChannel;
 
 public class UdpReceiver {
-   public static void main(String[] args) throws IOException {
+   public void udprec() throws IOException {
       TextFileReader tfr = new TextFileReader("sample.txt");  
        
       //System.out.println(tfr.readFileData()); 

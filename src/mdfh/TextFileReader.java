@@ -59,7 +59,7 @@ public class TextFileReader {
         }catch(FileNotFoundException e){
             System.out.println("No file");
         }catch(IOException e){
-            System.out.println("?");
+            System.out.println("IOexception");
         }
         return message;
     }

@@ -10,7 +10,7 @@ public class UdpSender {
     
     static String out="";
     
-   public static void main(String[] args) throws IOException {
+    public void udpsen() throws IOException {
       TextFileReader tfr = new TextFileReader("sample.txt");  
       
       

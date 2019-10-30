@@ -33,6 +33,6 @@ public class UdpSender {
       client.receive(buffer);
       buffer.flip();
     
-      client.close();
+      //client.close();
    }
 }

@@ -19,8 +19,6 @@ import java.nio.channels.DatagramChannel;
 public class UdpReceiver {
    public void udprec() throws IOException {
       TextFileReader tfr = new TextFileReader("sample.txt");  
-       
-      //System.out.println(tfr.readFileData()); 
         
       DatagramChannel server = DatagramChannel.open();
       InetSocketAddress iAdd = new InetSocketAddress("localhost", 8989);

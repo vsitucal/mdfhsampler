@@ -23,7 +23,7 @@ public class UdpSender {
       }
 
       String msg =  out;
-      //System.out.println(out);
+
       ByteBuffer buffer = ByteBuffer.wrap(msg.getBytes());
       InetSocketAddress serverAddress = new InetSocketAddress("localhost",8989);
 

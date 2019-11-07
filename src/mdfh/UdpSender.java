@@ -2,7 +2,7 @@ package mdfh;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
-import java.net.SocketAddress;
+//import java.net.SocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.DatagramChannel;
 
@@ -18,11 +18,11 @@ public class UdpSender {
 
       client.bind(null);
       
-      for(char a:tfr.readFileData()){
-        out += a;
-      }
+//      for(char a:tfr.readFileData()){
+//        out += a;
+//      }
 
-      String msg =  out;
+      String msg =  tfr.readFileData();
 
       ByteBuffer buffer = ByteBuffer.wrap(msg.getBytes());
       InetSocketAddress serverAddress = new InetSocketAddress("localhost",8989);

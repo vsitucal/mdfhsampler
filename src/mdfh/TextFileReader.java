@@ -25,9 +25,12 @@ public class TextFileReader {
         this.path = path;
     }
     
-    public List<Character> readFileData()/*throws IOException,FileNotFoundException*/{
+    public String readFileData()/*throws IOException,FileNotFoundException*/{
         
-        List<Character> message = new ArrayList<>();
+        //List<Character> message = new ArrayList<>();
+        
+        String message = "";
+        
         try{    
             RandomAccessFile aFile = new RandomAccessFile(path,"r");
             FileChannel inChannel = aFile.getChannel();
@@ -39,7 +42,8 @@ public class TextFileReader {
                 buf.flip();
                 
                 while(buf.hasRemaining()){
-                    message.add((char)buf.get());
+                    //message.add((char)buf.get());
+                    message+=(char)buf.get();
                 }
                 
                 buf.clear();
